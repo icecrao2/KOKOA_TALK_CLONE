@@ -1,7 +1,7 @@
-#this is my HTML, CSS Study in nomad coder's Kokoa Talk clone coding course
+# this is my HTML, CSS Study in nomad coder's Kokoa Talk clone coding course
 
 
-##things that i learned by this course
+## things that i learned by this course
 
 1. i make html layout by display:flex;
 2. i study BEM and i can use this.
