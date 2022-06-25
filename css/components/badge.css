@@ -1,0 +1,23 @@
+.badge{
+  background-color:tomato;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:10px;
+  color:white;
+  font-weight:600;
+}
+
+.badge--small{
+  position:absolute;
+  width: 5px;
+  height: 5px;
+  bottom:20px;
+  left:0px;
+}
+
+.badge--parent{
+  position:relative;
+}
