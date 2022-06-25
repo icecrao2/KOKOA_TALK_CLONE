@@ -16,4 +16,18 @@
 
 .nav__link{
   color:#2e363e;
+  position:relative;
+}
+
+.nav__notification{
+  position:absolute;
+  bottom:10px;
+  left:10px;
+}
+
+.nav__btn:last-child .nav__notification{
+  width: 5px;
+  height: 5px;
+  bottom:20px;
+  left:20px;
 }
