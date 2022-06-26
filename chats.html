@@ -4,11 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chats - Kokoa Clone</title>
+  <title>Chat - Kokoa Clone</title>
   <link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
+<body id="chat-screen">
   
   <div class="status-bar">
     <div class="stauts-bar__column">
@@ -26,73 +26,36 @@
     </div>
   </div>
 
-  <header class="screen-header">
-    <h1 class="screen-header__title">Chats</h1>
-    <div class="screen-header__icons">
-      <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
-      <span><i class="fa-regular fa-comment-dots fa-lg"></i></span>
-      <span><i class="fa-solid fa-music fa-lg"></i></span>
-      <span><i class="fa-solid fa-gear fa-lg"></i></span>
+
+  <header class="alt-header">
+    <div class="alt-header__column">
+      <a href="more.html"><i class="fa-solid fa-angle-left fa-xl"></i></a>
+    </div>
+    <div class="alt-header__column">
+      <h1 class="alt-header__title">코코아</h1>
+    </div>
+    <div class="alt-header__column">
+      <span><i class="fa-solid fa-magnifying-glass"></i></span>
+      <span> <i class="fa-solid fa-bars"></i></span>
     </div>
   </header>
 
-  <main class="main-screen"> 
-    <div class="user-component" >
-      <div class="user-component__column">
-        <img src="https://t1.daumcdn.net/crms/symbol_img/symbol_%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%86%A1%EC%B1%84%EB%84%90%EA%B4%80%EB%A6%AC%EC%9E%90.png" 
-          class="user-component__avatar"/>
-        <div class="user-component__text">
-          <h4 class="user-component__title ">KaKaoTalk</h4>
-          <h6 class="user-component__subtitle">Please check My Kakao Account Info</h6>
-        </div>
-      </div>
-      <div class="user-component__column">
-        <span class="user-component__time">21:22</span>
-        <div class="badge">1</div>
-      </div>
+  
+  <main class="main-screen main-chat"> 
+    <div class="chat-timestamp">
+      Tuesday, June 30, 2020
     </div>
-    <div class="user-component" >
-      <div class="user-component__column">
-        <img src="https://t1.daumcdn.net/crms/symbol_img/symbol_%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%86%A1%EC%B1%84%EB%84%90%EA%B4%80%EB%A6%AC%EC%9E%90.png" 
-          class="user-component__avatar"/>
-        <div class="user-component__text">
-          <h4 class="user-component__title ">KoKoaTalk</h4>
-          <h6 class="user-component__subtitle">Please check My Kokoa Account Info</h6>
+    <div class="message-row">
+      <img src="https://t1.daumcdn.net/crms/symbol_img/symbol_%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%86%A1%EC%B1%84%EB%84%90%EA%B4%80%EB%A6%AC%EC%9E%90.png" />
+      <div class="message-row__content">
+        <span class="message__author">JaeWoong</span>
+        <div class="message__info">
+          <span class="message__bubble">Hi!</span>
+          <span class="message_time">21:27</span>
         </div>
-      </div>
-      <div class="user-component__column">
-        <span class="user-component__time">21:22</span>
-        <div class="badge">1</div>
       </div>
     </div>
   </main>
-  
-  <nav class="nav">
-    <ul class="nav__list">
-      <li class="nav__btn">
-        <a class="nav__link" href="friends.html" >
-          <i class="fa-regular fa-user fa-lg"></i>
-        </a>
-      </li>
-      <li class="nav__btn">
-        <a class="nav__link" href="chats.html" >
-          <span class="nav__notification badge">1</span>
-          <i class="fa-solid fa-comment fa-lg"></i> 
-        </a>
-      </li>
-      <li class="nav__btn">
-        <a class="nav__link" href="find.html" >
-          <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-        </a>
-      </li>
-      <li class="nav__btn">
-        <a class="nav__link" href="3" >
-          <span class="nav__notification badge"> </span>
-          <i class="fa-solid fa-ellipsis fa-lg"></i>
-        </a>
-      </li> 
-    </ul>
-  </nav>
   
 
 
