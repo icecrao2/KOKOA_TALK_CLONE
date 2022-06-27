@@ -1,86 +1,76 @@
-#chat-screen{
-  background-color: #abc1d1;
-  height:1100vh;
-}
+<!DOCTYPE html>
+<html lang="kr">
+ 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat - Kokoa Clone</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
 
-#chat-screen .alt-header{
-  position:sticky;
-  top:26px;
-  width:100%;
-  box-sizing: border-box;
-  background-color: #abc1d1;
-  z-index:1;
-}
+<body id="chat-screen">
+  
+  <div class="status-bar">
+    <div class="stauts-bar__column">
+      <span>No Service</span>
+      <i class="fa-solid fa-wifi"></i>
+    </div>
+    <div class="stauts-bar__column">
+      <span>18:43</span>
+    </div>
+    <div class="stauts-bar__column">
+      <!-- To do : Lock icon -->
+      <span>110%</span>
+      <i class="fa-solid fa-battery-full fa-lg"></i>
+      <i class="fa-solid fa-bolt-lightning"></i>
+    </div>
+  </div>
 
-#chat-screen .status-bar{
-  z-index:1;
-  background-color: #abc1d1;
-}
 
-.main-chat{
-  z-index:0;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-}
+  <header class="alt-header">
+    <div class="alt-header__column">
+      <a href="more.html"><i class="fa-solid fa-angle-left fa-xl"></i></a>
+    </div>
+    <div class="alt-header__column">
+      <h1 class="alt-header__title">코코아</h1>
+    </div>
+    <div class="alt-header__column">
+      <span><i class="fa-solid fa-magnifying-glass"></i></span>
+      <span> <i class="fa-solid fa-bars"></i></span>
+    </div>
+  </header>
 
-.chat-timestamp{
-  color:white;
-  background-color:#92a4b2;
-  padding:10px;
-  border-radius:20px;
-  font-size:14px;
-  margin-bottom:25px;
-}
+  
+  <main class="main-screen main-chat"> 
+    <div class="chat-timestamp">
+      Tuesday, June 30, 2020
+    </div>
+    <div class="message-row">
+      <img src="https://t1.daumcdn.net/crms/symbol_img/symbol_%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%86%A1%EC%B1%84%EB%84%90%EA%B4%80%EB%A6%AC%EC%9E%90.png" />
+      <div class="message-row__content">
+        <span class="message__author">JaeWoong</span>
+        <div class="message__info">
+          <span class="message__bubble">Hi!</span>
+          <span class="message_time">21:27</span>
+        </div>
+      </div>
+    </div>
+    <div class="message-row message-row--own">
+     
+      <div class="message-row__content">
+        <div class="message__info">
+          <span class="message__bubble">Hi! nice to meet you!</span>
+          <span class="message_time">21:27</span>
+        </div>
+      </div>
+    </div>
+  </main>
+  
 
-.message-row{
-  width:100%;
-  display:flex;
-  margin-bottom:25px;
-}
 
-.message-row img{
-  width:50px;
-  height:50px;
-  border-radius:50%;    
-  margin-right:15px;
-}
+  
+  <script src="https://kit.fontawesome.com/f145f48ad9.js" 
+    crossorigin="anonymous"></script>
+</body>
 
-.message__author{
-  opacity:0.9;
-  font-size:13px;
-  margin-bottom:4px;
-  display:block;
-}
-.message__info{
-  display:flex;
-  align-items:flex-end;
-}
-.message__bubble{
-  background-color:white;
-  padding:11px 12px;
-  border-radius:12px;
-  border-top-left-radius:0;
-  margin-right:5px;
-}
-
-.message__author,
-.message_time{
-  font-size:13px;
-  opacity:0.9;
-}
-.message-row--own{
-  justify-content: flex-end;
-}
-
-.message-row--own .message__bubble{
-  background-color: var(--yellow);
-  border-top-right-radius:0;
-  border-top-left-radius:12px;
-  margin-right:0px;
-  margin-left:5px;
-}
-
-.message-row--own .message__info{
-  flex-direction: row-reverse;
-}
+</html>
