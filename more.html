@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="kr">
+ 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>More - Kokoa Clone</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  
+  <div class="status-bar">
+    <div class="stauts-bar__column">
+      <span>No Service</span>
+      <i class="fa-solid fa-wifi"></i>
+    </div>
+    <div class="stauts-bar__column">
+      <span>18:43</span>
+    </div>
+    <div class="stauts-bar__column">
+      <!-- To do : Lock icon -->
+      <span>110%</span>
+      <i class="fa-solid fa-battery-full fa-lg"></i>
+      <i class="fa-solid fa-bolt-lightning"></i>
+    </div>
+  </div>
+
+  <header class="screen-header">
+    <h1 class="screen-header__title">More</h1>
+    <div class="screen-header__icons">
+      <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+      <span><i class="fa-solid fa-music fa-lg"></i></span>
+      <span class="badge--parent">
+        <a href="settings.html" >
+          <i class="fa-solid fa-gear fa-lg"></i>
+        </a>
+        <span class="badge badge--small"></span>
+      </span>
+    </div>
+  </header>
+
+  
+  <main class="main-screen more-screen"> 
+    <div class="user-component" >
+      <div class="user-component__column">
+        <img src="https://t1.daumcdn.net/crms/symbol_img/symbol_%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%86%A1%EC%B1%84%EB%84%90%EA%B4%80%EB%A6%AC%EC%9E%90.png" 
+          class="user-component__avatar user-component__avatar--xl"/>
+        <div class="user-component__text">
+          <h4 class="user-component__title ">JaeWoong</h4>
+          <h6 class="user-component__subtitle">+111 222 3333</h6>
+        </div>
+      </div>
+      <div class="user-component__column">
+        <i class="fa-regular fa-comment-alt fa-2x"></i>
+      </div>
+    </div>
+
+    <div class="icon-row">
+      <div class="icon-row__icon">
+        <i class="fa-regular fa-calendar"></i>
+        <span>Calendar</span>
+      </div>
+      <div class="icon-row__icon">
+        <i class="fa-regular fa-face-grin-wide"></i>
+        <span>Talk Drive</span>
+      </div>
+      <div class="icon-row__icon">
+        <i class="fa-regular fa-face-grin-wide"></i> 
+        <span>Emoticons</span>
+      </div>
+      <div class="icon-row__icon">
+        <i class="fa-solid fa-paint-roller"></i>
+        <span>Themes</span>
+      </div>
+      <div class="icon-row__icon">
+        <i class="fa-solid fa-file-invoice-dollar"></i>
+        <span>Account</span>
+      </div>
+      <div class="icon-row__icon">
+        <i class="fa-regular fa-envelope"></i>
+        <span>Openchat</span>
+      </div>
+    </div>
+    <div class="more-suggestions">
+      <h4 class="more-suggestions__title">Suggestions</h4>
+      <div class="more-suggesetions__icons">
+        <div class="more-suggesetions__icon">
+          <div class="more-suggestions__icon-image">
+             <i class="fa-solid fa-quote-right"></i>
+          </div>
+          <span class="more-suggestions__icon-text">KOKOA Story</span>
+        </div>
+        <div class="more-suggesetions__icon">
+          <div class="more-suggestions__icon-image">
+             <i class="fa-solid fa-quote-right"></i>
+          </div>
+          <span class="more-suggestions__icon-text">KOKOA Story</span>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__btn">
+        <a class="nav__link" href="friends.html" >
+          <i class="fa-regular fa-user fa-lg"></i>
+        </a>
+      </li>
+      <li class="nav__btn">
+        <a class="nav__link" href="chats.html" >
+          <span class="nav__notification badge">1</span>
+          <i class="fa-regular fa-comment fa-lg"></i> 
+        </a>
+      </li>
+      <li class="nav__btn">
+        <a class="nav__link" href="find.html" >
+          <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+        </a>
+      </li>
+      <li class="nav__btn">
+        <a class="nav__link" href="more.html" >
+          <span class="nav__notification badge"> </span>
+          <i class="fa-solid fa-ellipsis fa-lg"></i>
+        </a>
+      </li> 
+    </ul>
+  </nav>
+  
+
+  <div id="no-mobile">
+    <span>your screen is too big</span>
+  </div>
+  
+  <script src="https://kit.fontawesome.com/f145f48ad9.js" 
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
